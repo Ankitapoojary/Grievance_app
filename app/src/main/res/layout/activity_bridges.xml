@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".bridges">
+
+    <TextView
+        android:id="@+id/bridgesTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="BRIDGE ISSUES"
+        android:textColor="@color/purple_700"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/pickedbridgesImage"
+        android:layout_width="412dp"
+        android:layout_height="274dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/bridgesTitle"
+        android:src="@drawable/bridge"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="226dp" />
+
+    <RadioButton
+        android:id="@+id/bridgesselectbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pickedbridgesImage"
+        android:layout_centerHorizontal="true"
+        android:text="Select image" />
+
+    <RadioButton
+        android:id="@+id/bridgesuploadbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bridgesselectbutton"
+        android:layout_centerHorizontal="true"
+        android:text="Upload" />
+
+    <RadioButton
+        android:id="@+id/bridgesselectvideobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bridgesuploadbutton"
+        android:layout_centerHorizontal="true"
+        android:text="Select video" />
+
+    <RadioButton
+        android:id="@+id/bridgesuploadvideobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bridgesselectvideobutton"
+        android:layout_centerHorizontal="true"
+        android:text="Upload" />
+
+    <EditText
+        android:id="@+id/editbridgesText"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_below="@id/bridgesuploadvideobutton"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="write complaint here.."
+        android:drawablePadding="50dp"/>
+
+    <RadioButton
+        android:id="@+id/bridgesselectaudiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bridgesuploadvideobutton"
+        android:layout_centerHorizontal="true"
+        android:text="Select Audio" />
+
+    <RadioButton
+        android:id="@+id/bridgesuploadaudiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bridgesselectaudiobutton"
+        android:layout_centerHorizontal="true"
+        android:text="Upload Audio" />
+
+
+
+</RelativeLayout>

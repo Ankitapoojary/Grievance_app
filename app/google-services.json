@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "817251913346",
+    "project_id": "activity-intro",
+    "storage_bucket": "activity-intro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817251913346:android:bc25f0297352887c972e9b",
+        "android_client_info": {
+          "package_name": "com.example.activity_intro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFIfgzRrsVgZY9e06MoWv1kNV7RM4jkRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

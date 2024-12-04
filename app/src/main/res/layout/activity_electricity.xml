@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".electricity">
+
+
+    <TextView
+        android:id="@+id/elecTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Electricity issues"
+        android:textColor="@color/purple_700"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/pickedelecImage"
+        android:layout_width="412dp"
+        android:layout_height="274dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/elecTitle"
+        android:src="@drawable/electricityss"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="226dp" />
+
+    <RadioButton
+        android:id="@+id/elecselectbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pickedelecImage"
+        android:layout_centerHorizontal="true"
+        android:text="Select image" />
+
+    <RadioButton
+        android:id="@+id/elecuploadbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/elecselectbutton"
+        android:layout_centerHorizontal="true"
+        android:text="Upload" />
+
+    <RadioButton
+        android:id="@+id/elecselectvideobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/elecuploadbutton"
+        android:layout_centerHorizontal="true"
+        android:text="Select video" />
+
+    <RadioButton
+        android:id="@+id/elecuploadvideobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/elecselectvideobutton"
+        android:layout_centerHorizontal="true"
+        android:text="Upload" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_below="@id/elecuploadvideobutton"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="write complaint here.."
+        android:drawablePadding="50dp"/>
+
+    <RadioButton
+        android:id="@+id/elecselectaudiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/elecuploadvideobutton"
+        android:layout_centerHorizontal="true"
+        android:text="Select Audio" />
+
+    <RadioButton
+        android:id="@+id/elecuploadaudiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/elecselectaudiobutton"
+        android:layout_centerHorizontal="true"
+        android:text="Upload Audio" />
+
+
+
+</RelativeLayout>
+
+
+
+
+
+

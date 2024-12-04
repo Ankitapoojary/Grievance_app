@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".streetlight">
+
+
+    <TextView
+        android:id="@+id/streetlightTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="STREET LIGHT ISSUES"
+        android:textColor="@color/purple_700"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/pickedstreetlightImage"
+        android:layout_width="412dp"
+        android:layout_height="274dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/streetlightTitle"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="226dp" />
+
+    <RadioButton
+        android:id="@+id/streetlightselectbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pickedstreetlightImage"
+        android:layout_centerHorizontal="true"
+        android:text="Select image" />
+
+    <RadioButton
+        android:id="@+id/streetlightuploadbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/streetlightselectbutton"
+        android:layout_centerHorizontal="true"
+        android:text="Upload" />
+
+    <RadioButton
+        android:id="@+id/streetlightselectvideobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/streetlightuploadbutton"
+        android:layout_centerHorizontal="true"
+        android:text="Select video" />
+
+    <RadioButton
+        android:id="@+id/streetlightuploadvideobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/streetlightselectvideobutton"
+        android:layout_centerHorizontal="true"
+        android:text="Upload" />
+
+    <EditText
+        android:id="@+id/editstreetlightText"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_below="@id/streetlightuploadvideobutton"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="write complaint here.."
+        android:drawablePadding="50dp"/>
+
+    <RadioButton
+        android:id="@+id/streetlightselectaudiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/streetlightuploadvideobutton"
+        android:layout_centerHorizontal="true"
+        android:text="Select Audio" />
+
+    <RadioButton
+        android:id="@+id/streetlightuploadaudiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/streetlightselectaudiobutton"
+        android:layout_centerHorizontal="true"
+        android:text="Upload Audio" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".waste">
+
+
+    <TextView
+        android:id="@+id/wasteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="WASTE ISSUES"
+        android:textColor="@color/purple_700"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/pickedwasteImage"
+        android:layout_width="412dp"
+        android:layout_height="274dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/wasteTitle"
+        android:src="@drawable/waste"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="226dp" />
+
+    <RadioButton
+        android:id="@+id/wasteselectbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pickedwasteImage"
+        android:layout_centerHorizontal="true"
+        android:text="Select image" />
+
+    <RadioButton
+        android:id="@+id/wasteuploadbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wasteselectbutton"
+        android:layout_centerHorizontal="true"
+        android:text="Upload" />
+
+    <RadioButton
+        android:id="@+id/wasteselectvideobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wasteuploadbutton"
+        android:layout_centerHorizontal="true"
+        android:text="Select video" />
+
+    <RadioButton
+        android:id="@+id/wasteuploadvideobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wasteselectvideobutton"
+        android:layout_centerHorizontal="true"
+        android:text="Upload" />
+
+    <EditText
+        android:id="@+id/editwasteText"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_below="@id/wasteuploadvideobutton"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="write complaint here.."
+        android:drawablePadding="50dp"/>
+
+    <RadioButton
+        android:id="@+id/wasteselectaudiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wasteuploadvideobutton"
+        android:layout_centerHorizontal="true"
+        android:text="Select Audio" />
+
+    <RadioButton
+        android:id="@+id/wasteuploadaudiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wasteselectaudiobutton"
+        android:layout_centerHorizontal="true"
+        android:text="Upload Audio" />
+
+
+
+</RelativeLayout>

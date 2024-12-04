@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".complain">
+
+    <EditText
+        android:id="@+id/e1"
+        android:layout_width="372dp"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:text="Full Name"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="21dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPostalAddress"
+        android:layout_width="380dp"
+        android:layout_height="219dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <EditText
+        android:id="@+id/e2"
+        android:layout_width="382dp"
+        android:layout_height="216dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Address here"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="127dp" />
+
+    <EditText
+        android:id="@+id/e3"
+        android:layout_width="385dp"
+        android:layout_height="179dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="complain here"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="362dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="532dp"
+        tools:visibility="visible" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="632dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".water">
+
+    <TextView
+        android:id="@+id/waterTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="WATER ISSUES"
+        android:textColor="@color/purple_700"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/pickedwaterImage"
+        android:layout_width="412dp"
+        android:layout_height="274dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/waterTitle"
+        android:src="@drawable/waters"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="226dp" />
+
+    <RadioButton
+        android:id="@+id/waterselectbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pickedwaterImage"
+        android:layout_centerHorizontal="true"
+        android:text="Select image" />
+
+    <RadioButton
+        android:id="@+id/wateruploadbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/waterselectbutton"
+        android:layout_centerHorizontal="true"
+        android:text="Upload" />
+
+    <RadioButton
+        android:id="@+id/waterselectvideobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wateruploadbutton"
+        android:layout_centerHorizontal="true"
+        android:text="Select video" />
+
+    <RadioButton
+        android:id="@+id/wateruploadvideobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/waterselectvideobutton"
+        android:layout_centerHorizontal="true"
+        android:text="Upload" />
+
+    <EditText
+        android:id="@+id/editwaterText"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_below="@id/wateruploadvideobutton"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="write complaint here.."
+        android:drawablePadding="50dp"/>
+
+    <RadioButton
+        android:id="@+id/waterselectaudiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wateruploadvideobutton"
+        android:layout_centerHorizontal="true"
+        android:text="Select Audio" />
+
+    <RadioButton
+        android:id="@+id/wateruploadaudiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/waterselectaudiobutton"
+        android:layout_centerHorizontal="true"
+        android:text="Upload Audio" />
+
+
+
+</RelativeLayout>

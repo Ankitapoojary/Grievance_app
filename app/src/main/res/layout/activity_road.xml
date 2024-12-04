@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".road">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    
+    <TextView
+        android:id="@+id/roadTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="ROAD ISSUES"
+        android:textColor="@color/purple_700"
+        android:textSize="36sp" />
+
+    <!-- Full Name Field -->
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roadTitle"
+        android:layout_marginTop="20dp"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/purple_700"
+        android:hintTextColor="@color/purple_700"
+         />
+
+    <!-- Email Field -->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fullName"
+        android:layout_marginTop="10dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/purple_700"
+        android:hintTextColor="@color/purple_700"
+        />
+
+    <!-- Phone Number Field -->
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginTop="10dp"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:textColor="@color/purple_700"
+        android:hintTextColor="@color/purple_700"
+        />
+    <!-- District Field -->
+    <EditText
+        android:id="@+id/district"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneNumber"
+        android:layout_marginTop="10dp"
+        android:hint="District"
+        android:inputType="text"
+        android:textColor="@color/purple_700"
+        android:hintTextColor="@color/purple_700"
+         />
+
+    <!-- State Field -->
+    <EditText
+        android:id="@+id/state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/district"
+        android:layout_marginTop="10dp"
+        android:hint="State"
+        android:inputType="text"
+        android:textColor="@color/purple_700"
+        android:hintTextColor="@color/purple_700"
+         />
+
+    <!-- Radio Buttons for Upload Options -->
+    <RadioButton
+        android:id="@+id/roadselectbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/state"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Select image"
+        android:textColor="@color/purple_700" />
+
+    <RadioButton
+        android:id="@+id/roaduploadbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roadselectbutton"
+        android:layout_centerHorizontal="true"
+        android:text="Upload"
+        android:textColor="@color/purple_700" />
+
+    <RadioButton
+        android:id="@+id/roadselectvideobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roaduploadbutton"
+        android:layout_centerHorizontal="true"
+        android:text="Select video"
+        android:textColor="@color/purple_700" />
+
+
+    <RadioButton
+        android:id="@+id/roaduploadvideobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roadselectvideobutton"
+        android:layout_centerHorizontal="true"
+        android:text="Upload"
+        android:textColor="@color/purple_700" />
+
+    <!-- Complaint Text Area -->
+
+    <!-- Radio Buttons for Audio Options -->
+
+    <EditText
+        android:id="@+id/editroadText"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_below="@id/roaduploadvideobutton"
+        android:layout_marginTop="30dp"
+
+        android:ems="10"
+        android:hint="write complaint here.."
+        android:hintTextColor="@color/purple_700"
+        android:inputType="text"
+        android:textColor="@color/purple_700" />
+
+
+</RelativeLayout>
